@@ -1,0 +1,34 @@
+$paddingWrap: 15px;
+$containerWidth: 1170px;
+
+// colors
+$default-color: #8d8d8d;
+$title-color: #29282d;
+$accent-color: #fe3e57;
+$bg-color: #f6f6f6;
+
+// fonts
+%font-quicksand400 {
+    font-family: Quicksand-Regular, sans-serif;
+    font-weight: 400;
+}
+
+%font-quicksand500 {
+    font-family: Quicksand-Medium, sans-serif;
+    font-weight: 500;
+}
+
+%font-roboto400 {
+    font-family: Roboto-Regular, sans-serif;
+    font-weight: 400;
+}
+
+%font-roboto500 {
+    font-family: Roboto-Medium, sans-serif;
+    font-weight: 500;
+}
+
+%font-roboto700 {
+    font-family: Roboto-Bold, sans-serif;
+    font-weight: 700;
+}
