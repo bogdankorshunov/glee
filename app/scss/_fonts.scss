@@ -1,49 +1,45 @@
 @font-face {
-    font-family: Quicksand-Regular, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-    src: local('Quicksand-Regular'),
-        url(../fonts/Quicksand-Regular.woff2) format('woff2'),
-        url(../fonts/Quicksand-Regular.woff) format('woff')
-}
-
-@font-face {
-    font-family: Quicksand-Medium, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-    src: local('Quicksand-Medium'),
-        url(../fonts/Quicksand-Medium.woff2) format('woff2'),
-        url(../fonts/Quicksand-Medium.woff) format('woff')
-}
-
-@font-face {
-    font-family: Roboto-Regular, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-    src: local('Roboto-Regular'),
-        url(../fonts/Roboto-Regular.woff2) format('woff2'),
-        url(../fonts/Roboto-Regular.woff) format('woff')
-}
-
-@font-face {
-    font-family: Roboto-Medium, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-    src: local('Roboto-Medium'),
-        url(../fonts/Roboto-Medium.woff2) format('woff2'),
-        url(../fonts/Roboto-Medium.woff) format('woff')
-}
-
-@font-face {
-    font-family: Roboto-Bold, sans-serif;
+    font-family: DMSans-Bold, sans-serif;
     font-weight: 700;
     font-style: normal;
     font-display: swap;
-    src: local('Roboto-Bold'),
-        url(../fonts/Roboto-Bold.woff2) format('woff2'),
-        url(../fonts/Roboto-Bold.woff) format('woff')
+    src: local('DMSans-Bold'),
+        url(../fonts/DMSans-Bold.woff2) format('woff2'),
+        // url(../fonts/DMSans-Bold.woff) format('woff')
+}
+@font-face {
+    font-family: DMSans-Medium, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: local('DMSans-Medium'),
+        url(../fonts/DMSans-Medium.woff2) format('woff2'),
+        // url(../fonts/DMSans-Medium.woff) format('woff')
+}
+@font-face {
+    font-family: DMSans-Regular, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: local('DMSans-Regular'),
+        url(../fonts/DMSans-Regular.woff2) format('woff2'),
+        // url(../fonts/DMSans-Regular.woff) format('woff')
+}
+@font-face {
+    font-family: Rubik-Medium, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: local('Rubik-Medium'),
+        url(../fonts/Rubik-Medium.woff2) format('woff2'),
+        // url(../fonts/Rubik-Medium.woff) format('woff')
+}
+@font-face {
+    font-family: Rubik-Regular, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: local('Rubik-Regular'),
+        url(../fonts/Rubik-Regular.woff2) format('woff2'),
+        // url(../fonts/Rubik-Medium.woff) format('woff')
 }

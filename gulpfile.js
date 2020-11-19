@@ -12,6 +12,9 @@ const autoprefixer = require('gulp-autoprefixer');
 const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
 const del = require('del');
+let ttf2woff = require('gulp-ttf2woff');
+let ttf2woff2 = require('gulp-ttf2woff2');
+let plumber = require('gulp-plumber')
 
 
 function browsersync() {
@@ -78,6 +81,15 @@ function scripts() {
         .pipe(browserSync.stream())
 }
 
+function fonts() {
+    return src('app/fonts/*.ttf')
+        .pipe(plumber())
+        .pipe(ttf2woff2())
+        .pipe(dest('app/fonts/'))
+        .pipe(ttf2woff())
+        .pipe(dest('app/fonts/'))
+}
+
 function cleanDist() {
     return del('dist')
 }
@@ -101,8 +113,9 @@ function watching() {
 exports.styles = styles;
 exports.scripts = scripts;
 exports.images = images;
+exports.fonts = fonts;
 exports.browsersync = browsersync;
 exports.watching = watching;
 exports.cleanDist = cleanDist;
-exports.build = series(cleanDist, images, build);
+exports.build = series(cleanDist, images, fonts, build);
 exports.default = parallel(styles, scripts, browsersync, watching)
