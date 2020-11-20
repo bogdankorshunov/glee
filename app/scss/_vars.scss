@@ -9,14 +9,9 @@ $default-color: #7b7b7b;
 // $bg-color: #f6f6f6;
 
 // fonts
-%font-quicksand400 {
-    font-family: Quicksand-Regular, sans-serif;
+%font-dmsans400 {
+    font-family: DMSans-Regular, sans-serif;
     font-weight: 400;
-}
-
-%font-dmsans700 {
-    font-family: DMSans-Bold, sans-serif;
-    font-weight: 700;
 }
 
 %font-dmsans500 {
@@ -24,17 +19,18 @@ $default-color: #7b7b7b;
     font-weight: 500;
 }
 
-%font-dmsans400 {
-    font-family: DMSans-Regular, sans-serif;
-    font-weight: 400;
-}
-
-%font-rubik500 {
-    font-family: Rubik-Medium, sans-serif;
-    font-weight: 500;
+%font-dmsans700 {
+    font-family: DMSans-Bold, sans-serif;
+    font-weight: 700;
 }
 
 %font-rubik400 {
     font-family: Rubik-Regular, sans-serif;
     font-weight: 400;
+}
+
+
+%font-rubik500 {
+    font-family: Rubik-Medium, sans-serif;
+    font-weight: 500;
 }

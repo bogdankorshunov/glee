@@ -66,6 +66,7 @@ textarea,
 select {
     font: inherit;
     border: none;
+    outline: transparent;
 }
 
 input {
@@ -76,4 +77,8 @@ input {
 
 a[class] {
     text-decoration: none;
+}
+
+button[class] {
+    cursor: pointer;
 }

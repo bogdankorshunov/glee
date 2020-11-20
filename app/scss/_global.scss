@@ -29,3 +29,9 @@ a {
     padding: 0 $paddingWrap;
     margin: 0 auto;
 }
+
+.title {
+    @extend %font-dmsans700;
+    font-size: 16px;
+    color: #1f2044;
+}
