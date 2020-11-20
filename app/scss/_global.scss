@@ -14,9 +14,9 @@ body {
 .main {
     flex-grow: 1;
 }
-a {
-    color: $default-color;
-}
+// a {
+//     color: $default-color;
+// }
 .container {
     max-width: calc(#{$containerWidth} + (#{$paddingWrap} * 2));
     padding: 0 $paddingWrap;
@@ -33,5 +33,5 @@ a {
 .title {
     @extend %font-dmsans700;
     font-size: 16px;
-    color: #1f2044;
+    color: $focus-color;
 }
