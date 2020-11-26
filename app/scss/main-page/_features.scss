@@ -3,14 +3,11 @@
     display: flex;
     justify-content: space-between;
     background-color: #fef7f0;
-    // padding: 40px 225px;
     padding: 40px 138px 40px 225px;
-    background: rgba(255, 15, 15, 0.3);
 
     &__item {
         max-width: 570px;
         position: relative;
-        background: rgba(15, 255, 55, 0.3);
 
         &::before {
             content: "";
