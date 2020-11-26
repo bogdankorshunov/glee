@@ -1,0 +1,110 @@
+.slider {
+      width: 100%;
+      background-color: #fcd7b6;
+      position: relative;
+
+      &::after {
+            content: "";
+            background-image: url(../../images/decor/slider-decor.png);
+            width: 609px;
+            height: 634px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 10%;
+            background-size: cover;
+            z-index: 1;
+      }
+
+      &__inner {
+            padding: 0 300px;
+            z-index: 3;
+      }
+
+      &__item-box {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            padding: 220px 0 282px;
+      }
+
+
+      &__content {
+            max-width: 470px;
+            @extend %font-rubik500;
+      }
+
+      &__title {
+            font-size: 72px;
+            text-align: left;
+            text-transform: uppercase;
+            line-height: 0.972;
+            margin-bottom: 25px;
+            color: $title-color;
+      }
+
+      &__text {
+            max-width: 375px;
+            font-size: 18px;
+            margin-bottom: 40px;
+      }
+
+      &__btn {
+            position: relative;
+            background-color: rgb(163, 187, 200);
+            padding: 20px 105px 18px 25px;
+            font-size: 15px;
+            color: #fff;
+            display: inline-block;
+
+            &:focus {
+                  outline: transparent;
+            }
+
+            &::after {
+                  content: "";
+                  position: absolute;
+                  top: 50%;
+                  right: 19px;
+                  transform: translateY(-50%);
+                  width: 22px;
+                  height: 9px;
+                  background-image: url('../../images/icons/arrow-right.svg');
+            }
+      }
+
+      &__img-box {
+            z-index: 3;
+      }
+}
+
+.slick-dots {
+      position: absolute;
+      bottom: 45px;
+      left: 50%;
+      display: flex;
+      transform: translate(-50%);
+
+      li {
+            &:not(:last-child) {
+                  margin-right: 10px;
+            }
+
+            button {
+                  padding: 0;
+                  background-color: #fff;
+                  height: 30px;
+                  width: 30px;
+                  border-radius: 50%;
+                  opacity: 0.302;
+            }
+
+      }
+
+      .slick-active {
+            button {
+                  opacity: 1;
+
+            }
+      }
+}
