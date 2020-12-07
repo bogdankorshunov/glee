@@ -1,0 +1,16 @@
+.filter {
+  display: flex;
+  justify-content: center;
+  &__btn {
+    background-color: transparent;
+    font-size: 16px;
+    @extend %font-dmsans700;
+    @include setColor($default-color);
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+    &--active {
+      color: $default-active-color;
+    }
+  }
+}

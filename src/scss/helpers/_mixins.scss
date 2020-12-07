@@ -1,0 +1,30 @@
+@mixin setBgColor($baseColor) {
+  background-color: $baseColor;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: darken($baseColor, 5%);
+  }
+  &:active {
+    background-color: darken($baseColor, 10%);
+  }
+}
+@mixin setColor($baseColor) {
+  color: $baseColor;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: darken($baseColor, 5%);
+  }
+  &:active {
+    color: darken($baseColor, 10%);
+  }
+}
+@mixin font-face($font-family, $url, $weight) {
+	@font-face {
+		font-family: '#{$font-family}';
+		src: url('../../fonts/#{$url}.woff2') format('woff2'),
+		url('../#{$url}.woff') format('woff');
+		font-weight: #{$weight};
+		font-display: swap;
+		font-style: normal;
+	}
+}

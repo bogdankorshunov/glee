@@ -1,0 +1,58 @@
+$maxWidthContainer: 1170;
+$maxWidthWrapper: 1770;
+
+// colors
+$default-color: #7b7b7b;
+$default-active-color: #191919;
+$focus-color: #1f2044;
+$title-color: #243f4d;
+$bg-color: #ffffff;
+$list-bg-color: #fef7f0;
+$form-btn: #a3bbc8;
+$top-slider-btn-color: #a3bbc8;
+// fonts
+%font-dmsans400 {
+  font-family: 'DMSans', sans-serif;
+  font-weight: 400;
+}
+
+%font-dmsans500 {
+  font-family: 'DMSans', sans-serif;
+  font-weight: 500;
+}
+
+%font-dmsans700 {
+  font-family: 'DMSans', sans-serif;
+  font-weight: 700;
+}
+
+%font-rubik400 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+%font-rubik500 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+}
+
+// colors
+$color-font-1: #436372;
+$color-font-2: #243f4d;
+$color-font-3: #414141;
+$color-font-4: #585858;
+$color-font-5: #234969;
+$color-font-6: #7b7b7b;
+
+$color-bg-1: #edf1f4;
+$color-bg-2: #fcd7b6;
+$color-bg-3: #a3bbc8;
+$color-bg-4: #fef7f0;
+
+$color-icon-1: #243f4d;
+$color-icon-2: #fff;
+
+$color-decor-1: #fde7d3;
+$color-decor-2: #e8e4df;
+$color-decor-3: #dae4e9;
+$color-button-1: #a3bbc8;

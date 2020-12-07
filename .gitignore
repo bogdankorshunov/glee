@@ -9,4 +9,3 @@ sass-lint.yml
 node_modules/
 package-lock.json
 app/css/*
-src/

@@ -1,0 +1,168 @@
+.footer {
+  padding-top: 73px;
+  color: $color-font-6;
+  a {
+    &:hover {
+      color: $color-font-2;
+      text-decoration: underline;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    border-bottom: 1px solid $color-decor-3;
+    padding-bottom: 65px;
+  }
+  &__block,
+  &__services,
+  &__account,
+  &__subscribe {
+    width: 100%;
+    max-width: 270px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+    &:not(:first-child) {
+      margin-top: 15px;
+    }
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 25px;
+  }
+
+  &__address {
+    max-width: 195px;
+    a {
+      display: block;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    span {
+      text-transform: uppercase;
+    }
+  }
+
+  &__location {
+    margin-bottom: 15px;
+  }
+
+  &__phone {
+    margin-bottom: 15px;
+  }
+
+  &__email {
+  }
+
+  &__services {
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+    @extend %font-dmsans700;
+  }
+
+  &__list {
+  }
+
+  &__item {
+    margin-bottom: 10px;
+  }
+
+  &__link {
+  }
+
+  &__account {
+  }
+
+  &__subscribe {
+  }
+
+  &__text {
+    margin-bottom: 35px;
+  }
+
+  &__copyright {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+  }
+
+  &__copyright-text {
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+  }
+
+  &__element {
+    position: relative;
+
+    &:not(:last-child) {
+      &::after {
+        padding: 0 13px;
+        content: '|';
+      }
+    }
+  }
+
+  &__element-link {
+  }
+}
+.container {
+}
+.logo {
+  &__img {
+  }
+}
+.title {
+}
+.form {
+  display: flex;
+  justify-content: space-between;
+  background-color: $color-bg-4;
+
+  &__group {
+    position: relative;
+    height: 100%;
+  }
+
+  
+
+  &__input {
+    background-color: $color-bg-4;
+    padding: 5px 5px 13px 10px;
+    max-width: 150px;
+    &:focus ~ label,
+    &:not(:placeholder-shown) ~ label {
+      top: -10px;
+      left: 1px ;
+      color: $color-font-5;
+      font-size: 12px;
+      @extend %font-dmsans400;
+    }
+  }
+
+  &__name {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    transform: translateY(-50%);
+    transition: all 0.3s ease-in-out;
+    color: $title-color;
+    font-size: 12px;
+    pointer-events: none;
+  }
+
+  &__button {
+    padding-right: 18px;
+    padding-left: 14px;
+    text-align: center;
+    color: #fff;
+    @include setBgColor($color-button-1);
+  }
+}
