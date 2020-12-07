@@ -3,8 +3,8 @@
   color: $color-font-6;
   a {
     &:hover {
-      color: $color-font-2;
       text-decoration: underline;
+      color: $color-font-2;
     }
   }
   &__wrapper {
@@ -131,16 +131,13 @@
     height: 100%;
   }
 
-  
-
   &__input {
     background-color: $color-bg-4;
     padding: 5px 5px 13px 10px;
     max-width: 150px;
-    &:focus ~ label,
-    &:not(:placeholder-shown) ~ label {
+    &:focus ~ label {
       top: -10px;
-      left: 1px ;
+      left: 1px;
       color: $color-font-5;
       font-size: 12px;
       @extend %font-dmsans400;
