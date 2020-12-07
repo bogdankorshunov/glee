@@ -1,40 +1,32 @@
-.products {
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 40px 30px;
-  &__item {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: box-shadow 0.3s ease-in-out;
-    border-radius: 10px;
-    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
-    max-width: 270px;
-    overflow: hidden;
+.product-item {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: box-shadow 0.3s ease-in-out;
+  border-radius: 10px;
+  box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+  max-width: 270px;
+  overflow: hidden;
 
-    &:hover {
-      box-shadow: 0px 12px 60px 6px rgba(45, 45, 45, 0.1);
-      .products__controls {
-        transform: translateY(0);
-      }
+  &:hover {
+    box-shadow: 0px 12px 60px 6px rgba(45, 45, 45, 0.1);
+    .product-item__actions {
+      transform: translateY(0);
     }
   }
-
-  &__img {
+  &__img-box {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 290px;
-    margin-bottom: 5px;
     img {
       display: block;
       object-fit: cover;
       padding-bottom: 30px;
     }
   }
-
+  
   &__title {
     margin-bottom: 5px;
     text-align: center;
@@ -42,18 +34,19 @@
     font-size: 16px;
     @extend %font-dmsans500;
   }
-
+  
   &__price {
+    display: block;
     margin-bottom: 35px;
     text-align: center;
-    color: #a3bbc8;
+    color: $color-font-8;
     @extend %font-dmsans700;
   }
-
-  &__controls {
+  
+  &__actions {
     display: flex;
     position: absolute;
-    bottom: 160px;
+    bottom: 155px;
     align-items: center;
     justify-content: center;
     transform: translateY(500%);
@@ -80,20 +73,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      fill: #a3bbc8;
+      fill:$color-bg-3;
     }
   }
-}
-
-.icon--product-search {
-  width: 20px;
-  height: 20px;
-}
-.icon--product-cart {
-  width: 22px;
-  height: 20px;
-}
-.icon--product-like {
-  width: 22px;
-  height: 18px;
 }

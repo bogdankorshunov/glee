@@ -1,14 +1,15 @@
 .home-products {
-  padding: 75px 0 185px;
+  padding: 60px 0 185px;
   &__title {
-    margin-bottom: 17px;
+    margin-bottom: 20px;
   }
-
-  &__filter {
-    margin-bottom: 75px;
+  &__filter-list {
+    margin-bottom: 80px;
   }
-
-  &__btn {
-    background-color: transparent;
+  &__items {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px 30px;
   }
 }

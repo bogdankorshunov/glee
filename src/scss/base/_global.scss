@@ -7,8 +7,8 @@ body {
   flex-direction: column;
 
   line-height: 1.5;
-  @extend %font-rubik400;
   font-size: 14px;
+  @extend %font-rubik400;
 }
 
 .main {
@@ -54,4 +54,13 @@ a {
 
 .icon-box {
   position: relative;
+  border-radius: 50%;
+}
+
+.section-title {
+  text-align: center;
+  color: $color-font-7;
+  font-size: 36px;
+  font-weight: bold;
+  @extend %font-dmsans700;
 }

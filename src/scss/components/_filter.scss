@@ -1,16 +1,22 @@
 .filter {
   display: flex;
+  align-items: center;
   justify-content: center;
-  &__btn {
-    background-color: transparent;
-    font-size: 16px;
-    @extend %font-dmsans700;
-    @include setColor($default-color);
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
-    &--active {
-      color: $default-active-color;
-    }
+}
+
+.filter-item {
+  background-color: transparent;
+  color: $color-font-6;
+  transition: all 0.3s ease-in-out;
+  @extend %font-dmsans700;
+  font-size: 16px;
+  &:not(:last-child) {
+     margin-right: 20px;       
+  }
+  &:hover {
+      color: $color-font-7;
+  }
+  &--active {
+    color: $color-font-7;
   }
 }

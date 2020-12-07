@@ -1,0 +1,27 @@
+<section class="home-products">
+  <div class="container">
+    @include('../../html/components/section-title.html', {
+      'title': 'Products of the week',
+      'class': 'home-products__title'
+      })
+      <div class="home-products__filter-list filter">
+        <button class="home-products__filter-item filter-item filter-item--active" data-filter="all">All</button>
+        <button class="home-products__filter-item filter-item" data-filter=".category-a">Furnitures</button>
+        <button class="home-products__filter-item filter-item" data-filter=".category-b">Chairs</button>
+        <button class="home-products__filter-item filter-item" data-filter=".category-c">Lighting</button>
+        <button class="home-products__filter-item filter-item" data-filter=".category-d">Decor</button>
+      </div>
+      <div class="home-products__items">
+        @loop('../components/product-item.html', [
+          {'title': 'Wooden radio', 'price': '$29.00', 'img-number': 1, 'class': 'mix', 'category': 'category-a'},
+          {'title': 'Wooden chair', 'price': '$29.00', 'img-number': 2, 'class': 'mix', 'category': 'category-b'},
+          {'title': 'White chair', 'price': '$29.00', 'img-number': 3, 'class': 'mix', 'category': 'category-c'},
+          {'title': 'Retro table', 'price': '$29.00', 'img-number': 4, 'class': 'mix', 'category': 'category-d'},
+          {'title': 'Wooden radio', 'price': '$29.00', 'img-number': 5, 'class': 'mix', 'category': 'category-a'},
+          {'title': 'Wooden chair', 'price': '$29.00', 'img-number': 6, 'class': 'mix', 'category': 'category-b'},
+          {'title': 'White chair', 'price': '$29.00', 'img-number': 7, 'class': 'mix', 'category': 'category-c'},
+          {'title': 'Retro table', 'price': '$29.00', 'img-number': 8, 'class': 'mix', 'category': 'category-d'},
+        ])
+      </div>
+  </div>
+</section>
