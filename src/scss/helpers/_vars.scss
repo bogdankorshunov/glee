@@ -51,6 +51,8 @@ $color-bg-1: #edf1f4;
 $color-bg-2: #fcd7b6;
 $color-bg-3: #a3bbc8;
 $color-bg-4: #fef7f0;
+$color-bg-5: #feefe2;
+$color-bg-6: #f8f8f8; //new-design-item
 
 $color-icon-1: #243f4d;
 $color-icon-2: #fff;
@@ -59,3 +61,11 @@ $color-decor-1: #fde7d3;
 $color-decor-2: #e8e4df;
 $color-decor-3: #dae4e9;
 $color-button-1: #a3bbc8;
+
+%hover-shadow {
+  box-shadow: 0px 12px 60px 6px rgba(45, 45, 45, 0.1);
+}
+
+%box-transition {
+  transition: all 0.3s ease-in-out;
+}
