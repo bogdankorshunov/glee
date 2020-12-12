@@ -19,12 +19,21 @@
   }
 }
 @mixin font-face($font-family, $url, $weight) {
-	@font-face {
-		font-family: '#{$font-family}';
-		src: url('../../fonts/#{$url}.woff2') format('woff2'),
-		url('../#{$url}.woff') format('woff');
-		font-weight: #{$weight};
-		font-display: swap;
-		font-style: normal;
-	}
+  @font-face {
+    font-family: '#{$font-family}';
+    src: url('../../fonts/#{$url}.woff2') format('woff2'),
+      url('../#{$url}.woff') format('woff');
+    font-weight: #{$weight};
+    font-display: swap;
+    font-style: normal;
+  }
+}
+
+//fancybox
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
 }

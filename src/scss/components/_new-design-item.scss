@@ -1,0 +1,32 @@
+.new-design {
+  &__item {
+    max-width: 370px;
+    min-height: 246px;
+    background-repeat: no-repeat;
+    background-color: $color-bg-6;
+    background-position: 100px 100px;
+    padding-top: 35px;
+    padding-left: 34px;
+    @extend %box-transition;
+    @extend %font-dmsans700;
+    &:hover {
+      @extend %hover-shadow;
+    }
+    &--position {
+      background-position: 85% 50%;
+    }
+  }
+
+  &__title {
+    max-width: 175px;
+    line-height: normal;
+    font-size: 20px;
+    color: $color-font-7;
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    color: $color-font-8;
+    display: block;
+  }
+}

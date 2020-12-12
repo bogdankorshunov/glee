@@ -1,5 +1,5 @@
 .home-products {
-  padding: 60px 0 185px;
+  padding: 60px 0 120px;
   &__title {
     margin-bottom: 20px;
   }
@@ -11,5 +11,6 @@
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 40px 30px;
+    margin-bottom: 190px;
   }
 }
