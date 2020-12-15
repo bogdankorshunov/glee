@@ -1,32 +1,19 @@
-<<<<<<< HEAD
 .new-design {
-=======
-.new-disign {
->>>>>>> 58e0105eb1f0cb10b5a8a0d77d359ecfe7b30c36
   &__item {
     max-width: 370px;
     min-height: 246px;
     background-repeat: no-repeat;
     background-color: $color-bg-6;
-<<<<<<< HEAD
     background-position: 100px 100px;
-=======
-    background-position: 10% center;
-    // background-position: 100px 100px;
->>>>>>> 58e0105eb1f0cb10b5a8a0d77d359ecfe7b30c36
     padding-top: 35px;
     padding-left: 34px;
     @extend %box-transition;
     @extend %font-dmsans700;
     &:hover {
-<<<<<<< HEAD
       @extend %hover-shadow;
     }
     &--position {
       background-position: 85% 50%;
-=======
-        @extend %hover-shadow;
->>>>>>> 58e0105eb1f0cb10b5a8a0d77d359ecfe7b30c36
     }
   }
 

@@ -1,24 +1,12 @@
 .new-design {
-<<<<<<< HEAD
   &__filter-list {
     margin-bottom: 70px;
   }
-=======
-
-  &__filter-list {
-    margin-bottom: 70px;
-  }
-
-  &__filter-item {
-  }
-
->>>>>>> 58e0105eb1f0cb10b5a8a0d77d359ecfe7b30c36
   &__items {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 35px 30px;
-<<<<<<< HEAD
   }
   &__link {
     &:hover {
@@ -29,8 +17,5 @@
   }
   &__title {
     transition: color 0.3s ease-in-out;
-=======
-    margin-bottom: 190px;
->>>>>>> 58e0105eb1f0cb10b5a8a0d77d359ecfe7b30c36
   }
 }
