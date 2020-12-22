@@ -23,6 +23,7 @@ const rev = require("gulp-rev");
 const revRewrite = require("gulp-rev-rewrite");
 const revdel = require("gulp-rev-delete-original");
 const htmlmin = require("gulp-htmlmin");
+const globbing = require('gulp-css-globbing');
 
 const svgSprites = () => {
   return src("./src/images/svg/**.svg")
@@ -151,6 +152,9 @@ const fontsStyle = (done) => {
 
 const styles = () => {
   return src("./src/scss/**/*.scss")
+    .pipe(globbing({
+      extensions: ['.scss']
+    }))
     .pipe(sourcemaps.init())
     .pipe(
       sass({
@@ -252,6 +256,9 @@ const tinypng = () => {
 
 const stylesBuild = () => {
   return src("./src/scss/**/*.scss")
+    .pipe(globbing({
+      extensions: ['.scss']
+    }))
     .pipe(
       sass({
         outputStyle: "expanded",
@@ -306,6 +313,7 @@ const scriptsBuild = () => {
     .pipe(uglify().on("error", notify.onError()))
     .pipe(dest("./app/js"));
 };
+
 const cache = () => {
   return src("app/**/*.{css,js,svg,png,jpg,jpeg,woff,woff2}", {
     base: "app",

@@ -30,7 +30,7 @@
   &__title {
     margin-bottom: 5px;
     text-align: center;
-    color: $title-color;
+    color: $color-font-2;
     font-size: 16px;
     @extend %font-dmsans500;
   }
@@ -61,7 +61,7 @@
         margin-right: 16px;
       }
       &:hover {
-        background-color: $form-btn;
+        background-color: $color-button-1;
         svg {
           transition: all 0.3s ease-in-out;
           fill: #fff;

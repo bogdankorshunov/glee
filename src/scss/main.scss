@@ -1,25 +1,6 @@
-@import "helpers/reset";
-@import "helpers/vars";
-@import "helpers/mixins";
-
-@import "vendors/libs";
-@import "base/fonts";
-@import "base/global";
-
-@import "layout/header";
-@import "layout/footer";
-
-@import "pages/home/home-top-slider";
-@import "pages/home/home-features";
-@import "pages/home/home-products";
-@import "pages/home/home-more";
-@import "pages/home/home-new-design";
-@import "pages/home/home-video";
-@import "pages/home/home-articles";
-@import "pages/home/home-partners";
-
-@import "components/icons";
-@import "components/filter";
-@import "components/product-item";
-@import "components/new-design-item";
-@import "components/article-preview-item";
+@import "helpers/*.scss";
+@import "vendors/*.scss";
+@import "base/*.scss";
+@import "layout/*.scss";
+@import "components/*.scss";
+@import "pages/**/*.scss";

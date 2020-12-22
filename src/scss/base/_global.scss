@@ -27,7 +27,7 @@ body {
 }
 
 .title {
-  color: $focus-color;
+  color: $color-font-8;
   font-size: 16px;
   @extend %font-dmsans700;
   
@@ -39,7 +39,7 @@ a {
 
 .section-title {
   text-align: center;
-  color: $default-active-color;
+  color: $color-font-9;
   font-size: 36px;
   @extend %font-dmsans700;
 }
