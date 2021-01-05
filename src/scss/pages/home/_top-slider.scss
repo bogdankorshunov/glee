@@ -1,0 +1,126 @@
+.home-top-slider {
+  position: relative;
+  background-color: $color-bg-2;
+  width: 100%;
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background-image: url('/images/decor/home-slider-decr.png');
+    background-size: cover;
+    width: 609px;
+    height: 634px;
+    content: '';
+  }
+
+  &__inner {
+    z-index: 3;
+    padding: 0 300px 280px;
+    height: 100%;
+  }
+
+  &__box {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 217px;
+  }
+
+  &__content {
+    max-width: 470px;
+    @extend %font-rubik500;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 1;
+    color: $color-font-2;
+    font-size: 72px;
+  }
+
+  &__text {
+    margin-bottom: 40px;
+    max-width: 375px;
+    color: $color-font-1;
+    font-size: 18px;
+    @extend %font-rubik400;
+  }
+
+  &__btn {
+    display: inline-block;
+    position: relative;
+    padding: 20px 105px 18px 25px;
+    color: #fff;
+    font-size: 15px;
+    @include setBgColor($color-button-1);
+
+    &:focus {
+      outline: transparent;
+    }
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      right: 19px;
+      transform: translateY(-50%);
+      transition: all 0.3s ease-in-out;
+      background-image: url('/images/icons/arrow-right.svg');
+      width: 22px;
+      height: 9px;
+      content: '';
+    }
+  }
+  .home-top-slider__btn:hover:after {
+    right: 10px;
+  }
+  &__img-box {
+    z-index: 3;
+  }
+
+  .slick-dots {
+    display: flex;
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    transform: translate(-50%);
+    color: $color-font-1;
+
+    li {
+      transition: all 0.3s ease-in-out;
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+      &:hover {
+        transform: translateY(-5px);
+        button {
+          opacity: 0.8;
+        }
+      }
+
+      button {
+        transition: all 0.3s ease-in-out;
+        opacity: 0.3;
+        border-radius: 50%;
+        background-color: $color-icon-2;
+        cursor: pointer;
+        padding: 0;
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .slick-active {
+      button {
+        opacity: 1;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

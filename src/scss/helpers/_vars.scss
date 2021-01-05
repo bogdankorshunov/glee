@@ -19,6 +19,7 @@ $color-bg-3: #a3bbc8;
 $color-bg-4: #fef7f0;
 $color-bg-5: #feefe2;
 $color-bg-6: #f8f8f8; //new-design-item
+$color-bg-7: #f6f6f6; //social button
 
 $color-icon-1: #243f4d;
 $color-icon-2: #fff;
@@ -62,6 +63,10 @@ $color-button-1: #a3bbc8;
   font-weight: 700;
 }
 
+%font-poppins600 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
 %font-poppins700 {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
