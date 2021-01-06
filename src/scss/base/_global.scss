@@ -3,9 +3,9 @@ body {
   height: 100%;
 }
 body {
-  background-color: #fff;
   display: flex;
   flex-direction: column;
+  background-color: #fff;
   line-height: 1.5;
   color: $color-font-2;
   font-size: 14px;
@@ -66,3 +66,4 @@ a {
   font-weight: bold;
   @extend %font-dmsans700;
 }
+

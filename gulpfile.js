@@ -24,6 +24,8 @@ const revRewrite = require("gulp-rev-rewrite");
 const revdel = require("gulp-rev-delete-original");
 const htmlmin = require("gulp-htmlmin");
 const globbing = require('gulp-css-globbing');
+const postcss = require('gulp-postcss');
+const sorting = require('postcss-sorting');
 
 const svgSprites = () => {
   return src("./src/images/svg/**.svg")
@@ -155,6 +157,12 @@ const styles = () => {
     .pipe(globbing({
       extensions: ['.scss']
     }))
+    // .pipe(
+    //   postcss([
+    //     sorting({ /* options */ 
+        
+    //     })
+    //   ]))
     .pipe(sourcemaps.init())
     .pipe(
       sass({

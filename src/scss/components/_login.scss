@@ -1,0 +1,113 @@
+.modal {
+  margin: 0 auto;
+  padding: 115px 0 120px;
+  max-width: 470px;
+
+  // .modal__label
+
+  &__label {
+    display: block;
+    margin-bottom: 35px;
+    cursor: pointer;
+    color: $color-font-1;
+  }
+  // .modal__input
+  &__input {
+    display: block;
+    margin-top: 5px;
+    border: 1px solid $color-bg-7;
+    padding: 0 15px;
+    width: 100%;
+    min-height: 60px;
+  }
+  &__btn {
+    margin-bottom: 30px;
+    width: 100%;
+    line-height: 60px;
+    color: #ffffff;
+    font-size: 18px;
+    @include setBgColor($color-bg-3);
+    @extend %font-rubik500;
+  }
+
+  &__btn--outline {
+    border: 2px solid $color-bg-3;
+    background-color: transparent;
+    color: $color-font-2;
+    &:hover {
+      border-color: transparent;
+      color: #fff;
+    }
+  }
+  // .modal__inner
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    // padding-bottom: 25px;
+    border-bottom: 1px solid $color-bg-7;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  &__checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    input {
+      position: relative;
+      transition: background 175ms cubic-bezier(0.1, 0.1, 0.25, 1);
+      margin-right: 15px;
+      outline: 0;
+      border-radius: 2px;
+      background-color: #ebebeb;
+      cursor: pointer;
+      width: 14px;
+      height: 14px;
+      color: $color-bg-2;
+      appearance: none;
+      &::before {
+        display: block;
+        position: absolute;
+        top: 1px;
+        left: 5px;
+        transform: rotate(45deg);
+        opacity: 0;
+        border-width: 0 2px 2px 0;
+        border-style: solid;
+        border-color: #666;
+        width: 5px;
+        height: 10px;
+        content: '';
+      }
+      &:checked {
+        border-color: transparent;
+        background: #ebebeb;
+        color: #666;
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+
+    label {
+      position: relative;
+      cursor: pointer;
+      user-select: none;
+      &::before {
+        position: absolute;
+        transition: clip-path 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        text-decoration: line-through;
+        text-decoration-color: $color-font-2;
+        color: $color-bg-5;
+        content: attr(data-content);
+        clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+        text-decoration-thickness: 3px;
+      }
+    }
+  }
+}
