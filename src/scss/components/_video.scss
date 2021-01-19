@@ -1,0 +1,46 @@
+.video {
+  position: relative;
+  margin-bottom: 105px;
+  background-image: url('../images/home/video-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  min-height: 500px;
+
+  &__link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-image: url('../images/icons/play-video-icon.svg');
+    transform: translate(-50%, -50%);
+    background-color: $color-bg-3;
+    border-radius: 50%;
+    width: 98px;
+    height: 98px;
+    animation: pusle 2.5s infinite;
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+  
+}
+
+@keyframes pusle {
+  0% {
+    box-shadow: 0 0 0 0px rgba(163, 187, 200, 0.25);
+    // top: 0;
+  }
+
+  50% {
+    box-shadow: 0 0 0 25px rgba(163, 187, 200, 0.5);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0px rgba(163, 187, 200, 0.25);
+  }
+}
+  @keyframes scale-on-hover {
+    100% {
+      box-shadow: 0 0 0 0px rgba(163, 187, 200, 0.25);
+    }
+}

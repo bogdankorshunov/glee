@@ -1,0 +1,113 @@
+.products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0 120px;
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__filter-list {
+    margin-bottom: 80px;
+  }
+  &__items {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px 30px;
+    margin-bottom: 190px;
+  }
+}
+
+.product-item {
+  // box-sizing: content-box;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: box-shadow 0.3s ease-in-out;
+  border-radius: 10px;
+  box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+  padding: 35px 20px 0;
+  overflow: hidden;
+  &__stars {
+    display: none;
+  }
+  &__content-box {
+    display: none;
+  }
+  &:hover {
+    box-shadow: 0px 12px 60px 6px rgba(45, 45, 45, 0.1);
+    .product-item__actions {
+      transform: translateY(0);
+    }
+  }
+
+  &__img-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 230px;
+    height: 230px;
+    margin-bottom: 30px;
+    img {
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  &__title {
+    margin-bottom: 5px;
+    text-align: center;
+    color: $color-font-2;
+    font-size: 16px;
+    @extend %font-dmsans500;
+  }
+
+  &__price {
+    display: block;
+    margin-bottom: 35px;
+    text-align: center;
+    color: $color-font-8;
+    @extend %font-dmsans700;
+  }
+
+  &__actions {
+    display: flex;
+    position: absolute;
+    bottom: 155px;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(500%);
+    transition: all 0.3s ease-in-out;
+    margin: 0 auto;
+    width: 100%;
+    button {
+      transition: all 0.3s ease-in-out;
+      width: 45px;
+      height: 45px;
+      &:not(:last-child) {
+        margin-right: 16px;
+      }
+      &:hover {
+        background-color: $color-button-1;
+        svg {
+          transition: all 0.3s ease-in-out;
+          fill: #fff;
+        }
+      }
+    }
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      fill: $color-bg-3;
+    }
+  }
+}
+
+.mixitup-control-active {
+  color: #1a1a1a;
+}

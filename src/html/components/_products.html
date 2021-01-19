@@ -1,18 +1,18 @@
-<section class="home-products">
+<section class="products">
   <div class="wrapper">
     <div class="container">
-      @include('../../html/components/_section-title.html', {
+      @include('_section-title.html', {
       'title': 'Products of the week',
-      'class': 'home-products__title'
+      'class': 'products__title'
       })
-      <div class="home-products__filter-list filter">
-        <button class="home-products__filter-item filter-item filter-item--active" data-filter="all">All</button>
-        <button class="home-products__filter-item filter-item" data-filter=".category-a">Furnitures</button>
-        <button class="home-products__filter-item filter-item" data-filter=".category-b">Chairs</button>
-        <button class="home-products__filter-item filter-item" data-filter=".category-c">Lighting</button>
-        <button class="home-products__filter-item filter-item" data-filter=".category-d">Decor</button>
+      <div class="products__filter-list filter">
+        <button class="products__filter-item filter-item" data-filter="all">All</button>
+        <button class="products__filter-item filter-item" data-filter=".category-a">Furnitures</button>
+        <button class="products__filter-item filter-item" data-filter=".category-b">Chairs</button>
+        <button class="products__filter-item filter-item" data-filter=".category-c">Lighting</button>
+        <button class="products__filter-item filter-item" data-filter=".category-d">Decor</button>
       </div>
-      <div class="home-products__items">
+      <div class="products__items">
         @loop('../components/_product-item.html', [
         {'title': 'Wooden radio', 'price': '$29.00', 'img-number': 1, 'class': 'mix', 'category': 'category-a'},
         {'title': 'Wooden chair', 'price': '$29.00', 'img-number': 2, 'class': 'mix', 'category': 'category-b'},
@@ -26,34 +26,34 @@
       </div>
 
     </div>
-    <div class="home-more">
-      <div class="home-more__item home-more__item--left">
-        <div class="home-more__img-box">
-          <img class="home-more__img" src="images/home-products/home-products-b-1.png" alt="">
+    <div class="more">
+      <div class="more__item more__item--left">
+        <div class="more__img-box">
+          <img class="more__img" src="images/products/products-b-1.png" alt="">
         </div>
-        <div class="home-more__info">
-          <h4 class="home-more__title">Mirum Notare Tellus</h4>
-          <p class="home-more__text">LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27LEDCornLight</p>
-          <a class="home-more__btn" href="#">View More</a>
+        <div class="more__info">
+          <h4 class="more__title">Mirum Notare Tellus</h4>
+          <p class="more__text">LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27LEDCornLight</p>
+          <a class="more__btn" href="#">View More</a>
         </div>
       </div>
-      <div class="home-more__item home-more__item--right">
-        <div class="home-more__img-box">
-          <img class="home-more__img" src="images/home-products/home-products-b-2.png" alt="">
+      <div class="more__item more__item--right">
+        <div class="more__img-box">
+          <img class="more__img" src="images/products/products-b-2.png" alt="">
         </div>
-        <div class="home-more__info">
-          <h4 class="home-more__title">Malesuada Tempor
+        <div class="more__info">
+          <h4 class="more__title">Malesuada Tempor
             Euismod</h4>
-          <p class="home-more__text">50W 8000lm Compact Size for HID StreetLightReplacementLEDCornLight</p>
-          <a class="home-more__btn" href="#">View More</a>
+          <p class="more__text">50W 8000lm Compact Size for HID StreetLightReplacementLEDCornLight</p>
+          <a class="more__btn" href="#">View More</a>
         </div>
       </div>
     </div>
     <div class="container">
       <div class="new-design">
-        @include('../../html/components/_section-title.html', {
+        @include('_section-title.html', {
         'title': 'New Design',
-        'class': 'home-products__title'
+        'class': 'products__title'
         })
         <div class="new-design__filter-list filter">
           <button class="new-design__filter-item filter-item filter-item--active" data-filter="all">All</button>
@@ -87,5 +87,4 @@
       </div>
     </div>
   </div>
-
 </section>

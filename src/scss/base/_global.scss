@@ -44,20 +44,7 @@ a {
   @extend %font-dmsans700;
 }
 
-.icon {
-  position: absolute;
-}
 
-.icon-center {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.icon-box {
-  position: relative;
-  border-radius: 50%;
-}
 
 .section-title {
   text-align: center;
