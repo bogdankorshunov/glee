@@ -9,9 +9,17 @@
 	<div class="wrapper">
 		@include('html/layout/_header.html')
 	</div>
-	@include('html/components/_breadcrumbs.html', {
-	'title': 'Product list 1'
-	})
+	<div class="breadcrumbs">
+		<h2 class="breadcrumbs__title">Product list 1</h2>
+		<ul class="breadcrumbs__list">
+			<li class="breadcrumbs__item">
+				<a href="/" class="breadcrumbs__link">Home</a>
+			</li>
+			<li class="breadcrumbs__item">
+				<a href="shop.html" class="breadcrumbs__link">Product list 1</a>
+			</li>
+		</ul>
+	</div>
 	<main class="main">
 		<div class="wrapper">
 			<div class="container">

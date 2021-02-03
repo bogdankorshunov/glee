@@ -99,3 +99,8 @@ $color-button-1: #a3bbc8;
   clip: rect(0 0 0 0);
   position: absolute;
 }
+
+%width {
+  box-sizing: border-box;
+  width: 270px !important;
+}

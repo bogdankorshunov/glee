@@ -49,6 +49,7 @@
           text-align: left;
           color: #333;
           font-size: 40px;
+          @extend %font-rubik400;
         }
         &__stars {
           display: block;

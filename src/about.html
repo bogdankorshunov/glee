@@ -10,9 +10,17 @@
 		@include('html/layout/_header.html')
 		
 	</div>
-	@include('html/components/_breadcrumbs.html', {
-		'title': 'About us'
-	})
+	<div class="breadcrumbs">
+		<h2 class="breadcrumbs__title">About us</h2>
+		<ul class="breadcrumbs__list">
+			<li class="breadcrumbs__item">
+				<a href="/" class="breadcrumbs__link">Home</a>
+			</li>
+			<li class="breadcrumbs__item">
+				<a href="about.html" class="breadcrumbs__link">About us</a>
+			</li>
+		</ul>
+	</div>
 	<main class="main">
 		@include('html/pages/about/_mission.html')
 		@include('html/components/_statistic.html')
