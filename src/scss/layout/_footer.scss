@@ -52,12 +52,6 @@
     margin-bottom: 15px;
   }
 
-  &__email {
-  }
-
-  &__services {
-  }
-
   &__title {
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -66,20 +60,8 @@
     @extend %font-dmsans700;
   }
 
-  &__list {
-  }
-
   &__item {
     margin-bottom: 10px;
-  }
-
-  &__link {
-  }
-
-  &__account {
-  }
-
-  &__subscribe {
   }
 
   &__text {
@@ -90,9 +72,6 @@
     display: flex;
     justify-content: space-between;
     padding: 30px 0;
-  }
-
-  &__copyright-text {
   }
 
   &__links {
@@ -110,18 +89,8 @@
       }
     }
   }
+}
 
-  &__element-link {
-  }
-}
-.container {
-}
-.logo {
-  &__img {
-  }
-}
-.title {
-}
 .form {
   display: flex;
   justify-content: space-between;

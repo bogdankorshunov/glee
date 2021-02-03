@@ -206,86 +206,67 @@
 								</div>
 							</div>
 						</div> -->
-						<form class="comments-form" action="#">
-							<h3 class="comments-form__title">Add your review</h3>
-							<div class="comments-form__rating">
-								<label class="comments-form__label">
-									<input class=" comments-form__radio" type="radio" name="star">
-									<span class="comments-form__stars">
-										<svg class="comments-form__icon">
-											<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#star"></use>
-										</svg>
-									</span>
+						<div class="comments">
+							<span class="comments__title">2 Reviews</span>
+							<div class="comments__item comments__item--self">
+								<div class="comments__inner">
+									<div class="comments__img-box">
+										<img class="comments__img" src="images/people/people-3.jpg" alt="">
+									</div>
+									<div class="comments__content">
+										<div class="comments__top">
+											<span class="comments__name">Delores G. Roberts</span>
+											<time class="comments__date"><span>add </span>11 Oct 2020</time>
+
+										</div>
+										<p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+											fringilla massa et tristique convallis. Class aptent taciti sociosqu ad litora torquent per
+											conubia nostra, per inceptos himenaeos. Suspendisse orci sem, ultrices </p>
+										<button class="comments__reply">Reply
+											<svg class="">
+												<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#arrow-reply"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="comments__item comments__item--self">
+								<div class="comments__inner">
+									<div class="comments__img-box">
+										<img class="comments__img" src="images/people/people-3.jpg" alt="">
+									</div>
+									<div class="comments__content">
+										<div class="comments__top">
+											<span class="comments__name">Delores G. Roberts</span>
+											<time class="comments__date"><span>add </span>11 Oct 2020</time>
+
+										</div>
+										<p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+											fringilla massa et tristique convallis. Class aptent taciti sociosqu ad litora torquent per
+											conubia nostra, per inceptos himenaeos. Suspendisse orci sem, ultrices </p>
+										<button class="comments__reply">Reply
+											<svg class="">
+												<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#arrow-reply"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<form class="leave-comment" action="#">
+							<span class="leave-comment__title">Add Review</span>
+							<div class="leave-comment__inner">
+								<label class="leave-comment__label leave-comment__label--name">
+									<input class="leave-comment__name" type="text" placeholder="Name">
 								</label>
-								<label class="comments-form__label">
-									<input class=" comments-form__radio" type="radio" name="star" checked>
-									<span class="comments-form__stars">
-										<svg class="comments-form__icon">
-											<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#star"></use>
-										</svg>
-										<svg class="comments-form__icon">
-											<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#star"></use>
-										</svg>
-									</span>
-								</label>
-								<label class="comments-form__label">
-									<input class="comments-form__radio" type="radio" name="star" checked>
-									<span class="comments-form__stars">
-										<svg class="comments-form__icon">
-											<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#star"></use>
-										</svg>
-										<svg class="comments-form__icon">
-											<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#star"></use>
-										</svg>
-										<svg class="comments-form__icon">
-											<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#star"></use>
-										</svg>
-									</span>
-								</label>
-								<label class="comments-form__label">
-									<input class=" comments-form__radio" type="radio" name="star" checked>
-									<span class="comments-form__stars">
-										<svg class="comments-form__icon">
-											<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#star"></use>
-										</svg>
-										<svg class="comments-form__icon">
-											<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#star"></use>
-										</svg>
-										<svg class="comments-form__icon">
-											<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#star"></use>
-										</svg>
-										<svg class="comments-form__icon">
-											<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#star"></use>
-										</svg>
-									</span>
-								</label>
-								<label class="comments-form__label">
-									<input class=" comments-form__radio" type="radio" name="star" checked>
-									<span class="comments-form__stars">
-										<svg class="comments-form__icon">
-											<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#star"></use>
-										</svg>
-										<svg class="comments-form__icon">
-											<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#star"></use>
-										</svg>
-										<svg class="comments-form__icon">
-											<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#star"></use>
-										</svg>
-										<svg class="comments-form__icon">
-											<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#star"></use>
-										</svg>
-										<svg class="comments-form__icon">
-											<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#star"></use>
-										</svg>
-									</span>
+								<label class="leave-comment__label leave-comment__label--email">
+									<input class="leave-comment__email" type="text" placeholder="Email">
 								</label>
 							</div>
-							<div class="comments-form__inner">
-								<input class="comments-form__input" type="text" placeholder="Your name">
-								<input class="comments-form__input" type="text" placeholder="Your e-mail">
-							</div>
-							<textarea class="comments-form__text" placeholder="Your text"></textarea>
-							<button class="comments-form__btn" type="submit">Leave Review</button>
+							<label class="leave-comment__label leave-comment__label--text">
+								<textarea class="leave-comment__text" placeholder="Comment"></textarea>
+							</label>
+							<button class="leave-comment__button" type="submit">Post Comment</button>
 						</form>
 					</div>
 				</div>

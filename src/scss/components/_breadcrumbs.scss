@@ -4,15 +4,15 @@
 
   &__title {
     text-align: center;
-    @extend %font-rubik300;
-    font-size: 36px;
     color: #222933;
+    font-size: 36px;
+    @extend %font-rubik300;
   }
 
   &__list {
-    margin: 0 auto;
     display: flex;
     justify-content: center;
+    margin: 0 auto;
   }
 
   &__item {
@@ -20,16 +20,16 @@
       padding-right: 8px;
     }
     &:not(:last-child)::after {
-      content: '/';
       padding-left: 8px;
       color: #737980;
+      content: '/';
     }
   }
 
   &__link {
-    @extend %font-rubik300;
-    font-size: 14px;
     color: #737980;
+    font-size: 14px;
+    @extend %font-rubik300;
     &:hover, &:focus {
       color: #222933;
     }

@@ -36,13 +36,6 @@
     overflow: hidden;
   }
 
-  &__img {
-    // width: 100%;
-    // max-width: 100%;
-  }
-
-  // .blog-posts__info
-
   &__info {
     display: flex;
     position: absolute;
@@ -158,15 +151,6 @@
     fill: $color-font-2;
   }
 
-  // .blog-aside__category
-
-  &__category {
-  }
-
-  // .blog-aside__recent
-
-  &__recent {
-  }
 }
 
 .blog-article {
@@ -271,14 +255,6 @@
       object-fit: cover;
     }
   }
-
-  // .blog-article__info
-
-  &__info {
-  }
-
-  // .blog-article__name
-
   &__name {
     margin-bottom: 5px;
     color: #333;
@@ -352,9 +328,9 @@
 
   &__social {
     a {
-      fill: #999;
       display: flex;
       align-items: center;
+      fill: #999;
     }
     &:not(:last-child) {
       margin-right: 20px;
@@ -370,8 +346,6 @@
     width: 100px;
     height: 70px;
   }
-  &__img {
-  }
 }
 
 .comments {
@@ -386,16 +360,11 @@
 
   &__item {
     padding-top: 15px;
-    &--self {
-    }
-
     &--answer {
       box-sizing: content-box;
+      padding-top: 30px;
       padding-left: 130px;
       max-width: 740px;
-      padding-top: 30px;
-      .comment__inner {
-      }
     }
   }
 
@@ -423,10 +392,6 @@
     height: 100%;
     object-fit: cover;
   }
-
-  &__content {
-  }
-
   &__top {
     display: flex;
     align-items: center;
@@ -520,8 +485,8 @@
       }
     }
     &--text {
-      position: relative;
       display: block;
+      position: relative;
       margin-bottom: 40px;
       &::after {
         position: absolute;
@@ -542,10 +507,10 @@
   }
   &__button {
     padding: 15px 43px;
-    background-color: $color-button-1;
     text-transform: uppercase;
     color: #fff;
     font-size: 14px;
+    @include setBgColor($color-button-1);
   }
 }
 

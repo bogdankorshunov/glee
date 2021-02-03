@@ -2,6 +2,7 @@
   position: relative;
   background-color: $color-bg-2;
   width: 100%;
+  z-index: 1;
 
   &::after {
     position: absolute;
